@@ -1,1 +1,1 @@
-# Dog-muzzle-leash-classification
+# 개물림 사고를 예방하기 위한 강아지 목줄, 입마개 유무 검출 서비스
