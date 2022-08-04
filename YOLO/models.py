@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras import layers, models, optimizers
 
-from custom_layers import yolov4_neck, yolov4_head, nms
-from utils import load_weights, get_detection_data, draw_bbox, voc_ap, draw_plot_func, read_txt_to_list
-from config import yolo_config
-from loss import yolo_loss
+from YOLO.custom_layers import yolov4_neck, yolov4_head, nms
+from YOLO.utils import load_weights, get_detection_data, draw_bbox, voc_ap, draw_plot_func, read_txt_to_list
+from YOLO.config import yolo_config
+from YOLO.loss import yolo_loss
 
 
 class Yolov4(object):
@@ -107,7 +107,6 @@ class Yolov4(object):
                                 initial_epoch=initial_epoch)
     # raw_img: RGB
     def predict_img(self, raw_img, random_color=True, plot_img=False, figsize=(10, 10), show_text=False, return_output=False):
-        print('img shape: ', raw_img.shape)
         img = self.preprocess_img(raw_img)
         imgs = np.expand_dims(img, axis=0)
         pred_output = self.inference_model.predict(imgs)
