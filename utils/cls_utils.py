@@ -18,7 +18,7 @@ def load_yolo_model():
 # load classification model (MobileNetV2)
 def load_cls_model():
     MobileNetV2Model= tf.keras.applications.MobileNetV2(
-        input_shape=(225,225,3),
+        input_shape=(224,224,3),
         include_top=False,
         weights="imagenet",
         input_tensor=None,
@@ -26,10 +26,10 @@ def load_cls_model():
     x = GlobalAveragePooling2D()(MobileNetV2Model.output)
     x = Flatten()(x)
     x = Dense(256, activation="relu")(x)
-    predictions = Dense(3, activation='softmax', name = "output_node")(x)
+    predictions = Dense(3, activation='sigmoid', name = "output_node")(x)
     model = Model(inputs=MobileNetV2Model.input, outputs=predictions)
 
-    model = load_model('./MobileNetV2-089-0.3565-0.9250.hdf5')
+    model = load_model('./MobileNetV2-120-0.1893-0.9625.hdf5')
     return model
 
 # get dog location in one frame
