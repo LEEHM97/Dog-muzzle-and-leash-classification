@@ -7,8 +7,8 @@ from utils.cls_utils import load_yolo_model, load_cls_model, get_dog_location, p
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # set location
-video = './video1.mkv'
-output_video = './outputs/output1.avi'
+video = './video4.mkv'
+output_video = './outputs/output4.avi'
 
 # load models
 yolo_model = load_yolo_model()
@@ -48,7 +48,7 @@ while True:
             resize_frame = preprocessing_image(dog_img)
             
             pred = soft_model.predict(resize_frame)[0]
-            class_num, score, class_txt = get_results(pred)
+            score, class_txt = get_results(pred)
             
             if score < 0.7: # classification result score threshold
                 continue
