@@ -49,14 +49,19 @@ def preprocessing_image(img):
 
 # get iamge classification results
 def get_results(pred):
-    class_num = pred.argmax(axis=-1)
-    score = pred.max()
+    if pred[0] > 0.7 and pred[1] > 0.7:
+        class_txt = "leash_muzzle"
+        score = (pred[0]+pred[1]) / 2
     
-    if class_num == 0:
-        class_txt = "leash"
-    elif class_num == 1:
-        class_txt = "muzzle"
     else:
-        class_txt = "nothing"
+        class_num = pred.argmax(axis=-1)
+        score = pred.max()
+        
+        if class_num == 0:
+            class_txt = "leash"
+        elif class_num == 1:
+            class_txt = "muzzle"
+        else:
+            class_txt = "nothing"
     
-    return class_num, score, class_txt
+    return score, class_txt
