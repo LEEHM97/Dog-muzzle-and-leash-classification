@@ -11,8 +11,8 @@ from tensorflow.keras import Model
 
 # load yolov4 model
 def load_yolo_model():
-    yolo_model = Yolov4(weight_path='./yolov4.weights',
-                class_name_path='./class_names/coco_classes.txt')
+    yolo_model = Yolov4(weight_path='./YOLO/yolov4.weights',
+                class_name_path='./YOLO/class_names/coco_classes.txt')
     return yolo_model
 
 # load classification model (MobileNetV2)
@@ -29,7 +29,7 @@ def load_cls_model():
     predictions = Dense(3, activation='softmax', name = "output_node")(x)
     model = Model(inputs=MobileNetV2Model.input, outputs=predictions)
 
-    soft_model = load_model('../MobileNetV2-107-0.2315-0.9500.hdf5')
+    soft_model = load_model('./MobileNetV2-107-0.2315-0.9500.hdf5')
     return soft_model
 
 # get dog location in one frame
