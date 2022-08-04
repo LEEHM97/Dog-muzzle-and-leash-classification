@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import Sequence
-from config import yolo_config
+from YOLO.config import yolo_config
 
 
 def load_weights(model, weights_file_path):
