@@ -34,13 +34,14 @@
 ### 5-1. 동영상<br>
 1. leash -> leash_muzzle (영상 출처: https://www.youtube.com/watch?v=b-6V8QS7YpU&t=249s) <br> 
 
-![image](https://user-images.githubusercontent.com/67961082/183940023-fd7bcb36-478d-407e-bf97-d0a5f5a79c1d.png)
+https://user-images.githubusercontent.com/67961082/185427251-f0de19e8-4d91-4a32-b4e1-f23d3810079c.mp4
+
 
 <br>
 
 2. more than two dogs (영상 출처: https://www.youtube.com/watch?v=xH9sN0Oc8GY&t=183s) <br> 
 
-![image](https://user-images.githubusercontent.com/67961082/183940300-00375c16-7a60-4b0e-81fe-50f087111fad.png)
+
 
 <br>
 
@@ -48,11 +49,17 @@
 
 1. nothing <br>
 
-![image](https://user-images.githubusercontent.com/67961082/183941640-2e8c0616-9eb5-4eb7-a6f1-b151e39660f3.png)
+
+https://user-images.githubusercontent.com/67961082/185427541-910da278-3b93-4ef1-987c-1e62031a0fe7.mp4
+
+
 
 2. leash <br>
 
-![image](https://user-images.githubusercontent.com/67961082/183941975-05187f4d-7942-43c4-b8b3-af0c973fab60.png)
+
+
+https://user-images.githubusercontent.com/67961082/185427574-60327e51-ffee-479f-a446-986c65f7ab86.mp4
+
 
 <br>
 
